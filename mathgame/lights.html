@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="lightOn()">Turn on the light</button>
+    <img src="bulboff.gif" id="bulbImage" width="100">
+    <h2 id ="heading"> Switch on the light, please</h2>
+    <button onclick="lightOff()" >Turn off the light</button>
+    
+    <script>
+        function lightOn(){
+            document.getElementById("bulbImage").src ="bulbon.gif";
+            document.getElementById("heading").textContent ="It's too bright!Turn it off!";
+        }
+        
+        function lightOff(){
+            document.getElementById("bulbImage").src ="bulboff.gif";
+            document.getElementById("heading").textContent ="Switch on the light please!";
+            
+        }
+    </script>
+    </body>
+</html>
