@@ -1,4 +1,18 @@
-.mainBox {
-    position: absolute;
-    height: 50%;
+.gameMode {
+    position:relative;
+    top:40vh;
+}
+
+
+
+.background {
+    background-image: url(https://pre00.deviantart.net/f26b/th/pre/f/2013/050/0/c/level_background_for_a_mobile_game__by_bvigec-d5vi8b0.jpg);
+    background-size: cover;
+    height:650px;
+    background-repeat: no-repeat
+}
+
+.option {
+    padding:20px;
+    font-family: 'Black Han Sans', sans-serif;
 }

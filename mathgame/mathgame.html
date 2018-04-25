@@ -6,39 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/math.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/math.css">
     <title>Document</title>
 </head>
 
-<body>
-    <div class="mainBox">
-     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="gameMode text-center">
-                    <button onclick="setAddition()">Addition</button>
-                    <button onclick="setSubtraction()">Subtraction</button>
-                    <button onclick="setMultiplication()">Multiplication</button>
+<body class="background">
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navCol" width="50px">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="text-center">
-                    <p>Your Score is: <span id="score">0</span></p>
-                    <p id="question"></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row text-center">
+            
+                <div class="gameMode">
+                    <div class="row">
+                        <div class="col-sm-12">
+                    <h1 class="option">Choose your challenge!</h1>
+                    </div>
+                    </div>
+                    <div class="button1 col-md-4 col-sm-4">
+                        <img src="http://www.clker.com/cliparts/2/f/6/1/11949856271997454136tasto_2_architetto_franc_01.svg.hi.png" id="add" onclick="setAddition()" height="50px" width="50px">
+                    </div>
 
 
-                    <form id="quizForm" name="answerForm" onsubmit="checkAnswer();
+                    <div class="button2 col-md-4 col-sm-4">
+                        <img src="http://www.clker.com/cliparts/3/6/4/b/12914263301547445417green-plus-minus-hi-hi.png" id="sub" onclick="setSubtraction()" height="50px" width="50px">
+                        
+                    </div>
+
+                    <div class="button3 col-md-4 col-sm-4">
+                        <img src="http://www.clker.com/cliparts/u/k/c/T/g/Q/multiplication-sig-hi.png" id="multi" onclick="setMultiplication()" width="50px" height="50px">
+                    </div>
+                </div>
+                    <div class="text-center col-sm-12">
+                <p>Your Score is: <span id="score">0</span></p>
+                <p id="question"></p>
+
+
+                <form id="quizForm" name="answerForm" onsubmit="checkAnswer();
     return false;" action="#" data-gametype="addition">
 
-                        Enter answer: <input type="number" name="answer">
-                        <input type="hidden" name="rightAnswer">
-                        <input type="submit" value="submit">
-
-
-                    </form>
+                    Enter answer: <input type="number" name="answer">
+                    <input type="hidden" name="rightAnswer">
+                    <input type="submit" value="submit">
+                    
+                </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
 
     <script type="text/javascript" src="../javascript/game.js"></script>
 </body>
