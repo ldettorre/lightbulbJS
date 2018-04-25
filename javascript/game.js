@@ -73,7 +73,7 @@ function subtractionQuiz() {
 }
 
 function multiplicationQuiz() {
-    let num1 = Math.floor(Math.random() * 25);
+    let num1 = Math.floor(Math.random() * 20);
     let num2 = Math.floor(Math.random() * 25);
     
     questionBox.textContent="What is: " + num1 + " * " + num2 + "?";
